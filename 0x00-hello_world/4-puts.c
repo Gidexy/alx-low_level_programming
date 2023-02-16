@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- *The main function is to print a line of code using put
- *it should then return 0
+ *main-function is to print a line of code usi ng puts
+ *Return: 0
  */
 int main (void)
 {
