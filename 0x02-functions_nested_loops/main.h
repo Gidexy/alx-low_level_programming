@@ -6,4 +6,7 @@ int _putchar(char c);
 /*To print alphabets in small letters*/
 void print_alphabet(void);
 
+/*print 10 lines of the alphabet*/
+void print_alphabet_x10(void);
+
 #endif
