@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
  *main- uses a function from the headee file
  *
  *Return: 0
-*/
+ */
 int main(void)
 {
 _putchar('_');
