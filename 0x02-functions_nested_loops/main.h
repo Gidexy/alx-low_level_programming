@@ -3,5 +3,7 @@
 /*To print using putchar */
 int _putchar(char c);
 
+/*To print alphabets in small letters*/
+void print_alphabet(void);
 
 #endif
