@@ -21,6 +21,8 @@ int main(void)
 	}
 	if (countto % 2 == 1)
 		printf("%li", a);
+	_putchar(',');
+	_putchar(' ');
 
 	printf("\n");
 
