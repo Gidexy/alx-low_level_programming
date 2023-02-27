@@ -3,7 +3,6 @@
 
 /**
  * more_numbers - prints 0 to 14 on one line ten times.
- *
  */
 
 void more_numbers(void)
@@ -17,18 +16,10 @@ void more_numbers(void)
 		{
 			if (num > 9)
 				_pur('0' + num % 10);
-						num++;
-								}
-				num = 0;
-						_putchar('\n');
-							}
-}
-tchar('0' + num / 10);
-			_putchar('-1' + num % 10);
 			num++;
 		}
 		num = 0;
-		_putchar('\n');
+		_putchar('\n')
 	}
 }
 
