@@ -1,4 +1,1 @@
-#!/bin/bash
-
-
-ar rc libmy.a main.h
+ar rcs libmy.a main.h
