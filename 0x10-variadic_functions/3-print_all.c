@@ -55,30 +55,29 @@ void print_string(va_list ap)
 void print_all(const char * const format, ...)
 {
 	char *separator = "";
-	int i, j = 0;
+	int a, j = 0;
 	va_list ap;
 
-	datatype choice[] = { 
-		{'c', print_char},
+	datatype choice[] = {{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string},
-		{'\0', NULL} };
+		{'\0', NULL}};
 
 	/* iterate format; if datatype matched, access function via struct */
 	va_start(ap, format);
 	while (format != NULL && format[j] != '\0')
 	{
-		i = 0;
-		while (choice[i].letter != '\0')
+		a = 0;
+		while (choice[a].letter != '\0')
 		{
-			if (choice[i].letter == format[j])
+			if (choice[a].letter == format[j])
 			{
 				printf("%s", separator);
-				choice[i].func(ap);
+				choice[a].func(ap);
 				separator = ",";
 			}
-			i++;
+			a++;
 		}
 		j++;
 	}
