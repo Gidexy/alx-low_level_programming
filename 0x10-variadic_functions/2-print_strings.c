@@ -1,5 +1,5 @@
-#include <stdarg.h> /* va_* */
-#include <stdio.h> /* printf */
+#include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -30,5 +30,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		va_end(ap);
 	}
-	print("\n");
+	printf("\n");
 }
