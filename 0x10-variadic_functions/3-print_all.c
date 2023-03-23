@@ -55,7 +55,7 @@ void print_string(va_list ap)
 void print_all(const char * const format, ...)
 {
 	char *separator = "";
-	int a, j = 0;
+	int i, j = 0;
 	va_list ap;
 
 	datatype choice[] = {{'c', print_char},
@@ -68,16 +68,16 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	while (format != NULL && format[j] != '\0')
 	{
-		a = 0;
-		while (choice[a].letter != '\0')
+		i = 0;
+		while (choice[i].letter != '\0')
 		{
-			if (choice[a].letter == format[j])
+			if (choice[i].letter == format[j])
 			{
 				printf("%s", separator);
-				choice[a].func(ap);
+				choice[i].func(ap);
 				separator = ",";
 			}
-			a++;
+			i++;
 		}
 		j++;
 	}
