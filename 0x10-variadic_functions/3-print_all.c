@@ -39,6 +39,7 @@ void print_string(va_list ap)
 	char *s;
 
 	s = va_arg(ap, char *);
+	
 	if (s == NULL)
 	{
 		printf("(nil)");
@@ -57,13 +58,13 @@ void print_all(const char * const format, ...)
 	int i, j = 0;
 	va_list ap;
 
-	datatype choice[] = {
+	datatype choice[] = { 
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
 		{'s', print_string},
-		{'\0', NULL}
-	};
+		{'\0', NULL} };
+
 	/* iterate format; if datatype matched, access function via struct */
 	va_start(ap, format);
 	while (format != NULL && format[j] != '\0')
@@ -75,7 +76,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				choice[i].func(ap);
-				separator = ", ";
+				separator = ",";
 			}
 			i++;
 		}
