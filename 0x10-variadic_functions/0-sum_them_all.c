@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * sum_them_all- This is for getting the sum of all values in the parameter
+ * sum_them_all - This is for getting the sum of all values in the parameter
  * @n: Only paramter for check
  * Return: retuns 0 and sum
  **/
