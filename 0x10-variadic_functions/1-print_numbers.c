@@ -1,5 +1,5 @@
-#include <stdarg.h> /* va_* */
-#include <stdio.h> /* printf */
+#include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -14,7 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (n > 0)
 	{
-		va_start(valist, n);
+		va_start(ap, n);
 		for (i = 1; i <= n; i++)
 		{
 			printf("%d", va_arg(ap, int);
